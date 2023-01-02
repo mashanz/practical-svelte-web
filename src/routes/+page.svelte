@@ -25,8 +25,8 @@
 <style>
 	.parallax-container {
 		position: fixed;
-		width: 2400px;
-		height: 712px;
+		width: 2500px;
+		height: 100%;
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
@@ -51,7 +51,7 @@
 		position: relative;
 		width: 100%;
 		height: 300vh;
-		color: rgb(220, 113, 43);
+		color: rgb(32, 0, 1);
 		text-align: center;
 		padding: 4em 0.5em 0.5em 0.5em;
 		box-sizing: border-box;
@@ -67,7 +67,7 @@
 
 	.foreground {
 		position: absolute;
-		top: 711px;
+		top: 850px;
 		left: 0;
 		width: 100%;
 		height: calc(100% - 712px);
@@ -79,6 +79,6 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
-		background-color: rgb(253, 174, 51);
+		background-color: rgb(32, 0, 1);
 	}
 </style>
