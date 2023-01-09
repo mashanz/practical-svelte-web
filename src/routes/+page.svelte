@@ -58,13 +58,6 @@
 		pointer-events: none;
 	}
 
-	span {
-		display: block;
-		font-size: 1em;
-		text-transform: uppercase;
-		will-change: transform, opacity;
-	}
-
 	.foreground {
 		position: absolute;
 		top: 850px;
