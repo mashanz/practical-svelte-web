@@ -6,10 +6,6 @@
 
 <svelte:window bind:scrollY={y} />
 
-<header>
-	<h1>PRACTICAL SVELTE</h1>
-</header>
-
 <div class="parallax-container">
 	{#each layers as layer}
 		<img
@@ -27,28 +23,10 @@
 </div>
 
 <style>
-	header {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 100;
-		width: 100%;
-		height: 50px;
-		background-color: rgb(10, 10, 10);
-		color: white;
-		padding: 0 0 0 0.5em;
-		box-sizing: border-box;
-	}
-	h1 {
-		font-family: monospace;
-		margin: 0;
-		padding: 0;
-		line-height: 50px;
-	}
 	.parallax-container {
 		position: fixed;
-		width: 2500px;
-		height: 100%;
+		width: 1280px;
+		/* height: 100%; */
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
@@ -82,7 +60,7 @@
 
 	.foreground {
 		position: absolute;
-		top: 850px;
+		top: 440px;
 		left: 0;
 		width: 100%;
 		height: calc(100% - 712px);
