@@ -6,7 +6,11 @@
 
 <svelte:window bind:scrollY={y} />
 
-<a class="parallax-container" href="https://www.firewatchgame.com">
+<header>
+	<h1>PRACTICAL SVELTE</h1>
+</header>
+
+<div class="parallax-container">
 	{#each layers as layer}
 		<img
 			style="transform: translate(0,{(-y * layer) / (layers.length - 1)}px)"
@@ -14,7 +18,7 @@
 			alt="parallax layer {layer}"
 		/>
 	{/each}
-</a>
+</div>
 
 <div class="text">
 	<div class="foreground">
@@ -23,6 +27,24 @@
 </div>
 
 <style>
+	header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		height: 50px;
+		background-color: rgb(10, 10, 10);
+		color: white;
+		padding: 0 0 0 0.5em;
+		box-sizing: border-box;
+	}
+	h1 {
+		font-family: monospace;
+		margin: 0;
+		padding: 0;
+		line-height: 50px;
+	}
 	.parallax-container {
 		position: fixed;
 		width: 2500px;
@@ -50,8 +72,8 @@
 	.text {
 		position: relative;
 		width: 100%;
-		height: 300vh;
-		color: rgb(32, 0, 1);
+		height: 250vh;
+		color: rgb(10, 10, 10);
 		text-align: center;
 		padding: 4em 0.5em 0.5em 0.5em;
 		box-sizing: border-box;
@@ -64,7 +86,7 @@
 		left: 0;
 		width: 100%;
 		height: calc(100% - 712px);
-		background-color: rgb(32, 0, 1);
+		background-color: rgb(10, 10, 10);
 		color: white;
 		padding: 50vh 0 0 0;
 	}
@@ -72,6 +94,6 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
-		background-color: rgb(32, 0, 1);
+		background-color: rgb(10, 10, 10);
 	}
 </style>
